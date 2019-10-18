@@ -1,4 +1,4 @@
-# batch.tf
+# batch-job.tf
 
 ## locals
 locals {
@@ -6,7 +6,8 @@ locals {
   image_name = "docker-registry-devops.coruscant.opsnow.com/sample-r"
 }
 resource "aws_batch_job_definition" "sample-r" {
-  name = "${local.upper_full_name}-sample
+  name = "${local.upper_full_name}-SAMPLE-R"
+  type = "container"
 
   container_properties = <<CONTAINER_PROPERTIES
 {
@@ -34,4 +35,5 @@ resource "aws_batch_job_definition" "sample-r" {
     ]
 }
 CONTAINER_PROPERTIES
+
 }
