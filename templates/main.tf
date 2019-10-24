@@ -23,6 +23,7 @@ module "valve" {
 }
 
 # output common
+/*
 output "vpc_id" {
   value = module.valve.vpc_id
 }
@@ -34,3 +35,4 @@ output "vpc_cidr" {
 output "subnet_id" {
   value = module.valve.subnet_id
 }
+*/
