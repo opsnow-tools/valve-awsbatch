@@ -1,0 +1,9 @@
+{
+    "jobName": "SEOUL-BATCH-BO-SAMPLE-R-JOB",
+    "jobDefinition": "SEOUL-BATCH-BO-SAMPLE-R",
+    "jobQueue": "SEOUL-BATCH-BO-QUEUE",
+    "containerOverrides": {
+        "vcpus": 1,
+        "memory": 1024
+    }
+}
